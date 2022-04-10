@@ -7,7 +7,11 @@ namespace sprite {
    //% block= "putSpriteAt $x, $y"
    //% xmin=0 xmax=25 ymin= 0 ymax=25
    
-    export function putSpriteAt(x: number, y: number): void {
+    export function putSpriteAt(index: number): void {
+       
+       const x = index
+       const y = index
+       
        let mySprite = sprites.create(img`
            ..........bbbbbb................
            .......bbb444444bb..............
