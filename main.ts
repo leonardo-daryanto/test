@@ -4,7 +4,7 @@ namespace sprite {
     * put a sprite in a middle
     */
    //% blockId= spriteputspriteat
-   //% block= "putSprite"
+   //% block= "putSpriteAt $x, $y"
    
     export function putSpriteAt(x: number, y: number): void {
        let mySprite = sprites.create(img`
