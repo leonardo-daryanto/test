@@ -5,6 +5,7 @@ namespace sprite {
     */
    //% blockId= spriteputspriteat
    //% block= "putSpriteAt $x, $y"
+   //% xmin=0 xmax=25 ymin= 0 ymax=25
    
     export function putSpriteAt(x: number, y: number): void {
        let mySprite = sprites.create(img`
@@ -44,18 +45,5 @@ namespace sprite {
        
 
     mySprite.setPosition(x, y)
-    
-    
-    }
-    
-    /**
-     * move the sprite
-     */
-    //% blockId= spritemovesprite
-    //% block= "moveSprite"
-    
-    export function moveSprite(): void {
-
-        controller.moveSprite(null)
     }
 }
