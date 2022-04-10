@@ -1,7 +1,12 @@
 namespace sprite {
+   
+   /**
+    * put a sprite in a middle
+    */
+   //% blockId= spriteputspriteat
    //% block= "putSprite"
    
-    export function putSprite(): void {
+    export function putSpriteAt(x: number, y: number): void {
        let mySprite = sprites.create(img`
            ..........bbbbbb................
            .......bbb444444bb..............
@@ -36,8 +41,17 @@ namespace sprite {
            ..........................ccc...
            ................................
        `, SpriteKind.Player) 
+       
+
+    mySprite.setPosition(x, y)
+    
+    
     }
     
+    /**
+     * move the sprite
+     */
+    //% blockId= spritemovesprite
     //% block= "moveSprite"
     
     export function moveSprite(): void {

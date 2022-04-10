@@ -1,2 +1,1 @@
-sprite.putSprite()
-sprite.moveSprite()
+sprite.putSpriteAt(80, 53)
